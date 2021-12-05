@@ -33,7 +33,7 @@ function getAPIhtml(myAPI) {
 }
 
 function displayAPIs(myAPIs) {
-        console.log(myAPIs)
+        console.log(myAPIs.entries[0])
 }
 
 getAPIs()
