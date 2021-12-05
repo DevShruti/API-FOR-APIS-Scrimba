@@ -34,6 +34,10 @@ function getAPIhtml(myAPI) {
 
 function displayAPIs(myAPIs) {
         console.log(myAPIs.entries[0])
+        let sampleAPIs = myAPIs.entries[0]
+        document.body.innerHTML = `<div class = "my-api">
+           <div class = "my-api-name">${sampleAPIs.API} (${sampleAPIs.Category})</div>
+          </div>`
 }
 
 getAPIs()
