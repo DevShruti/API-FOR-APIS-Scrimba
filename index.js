@@ -38,6 +38,7 @@ function displayAPIs(myAPIs) {
         document.body.innerHTML = `<div class = "my-api">
            <div class = "my-api-name">${sampleAPIs.API} (${sampleAPIs.Category})</div>
            <div class = "my-api-description">${sampleAPIs.Description}</div>
+           <div class = "my-api-auth">${sampleAPIs.Auth}</div>
           </div>`
 }
 
