@@ -36,7 +36,10 @@ function displayAPIs(myAPIs) {
         console.log(myAPIs.entries[0])
         let sampleAPIs = myAPIs.entries[0]
         document.body.innerHTML = `<div class = "my-api">
-           <div class = "my-api-name">${sampleAPIs.API} (${sampleAPIs.Category})</div>
+           <div class = "my-api-name">
+           <a href="${sampleAPIs.Link}"target="_blank">
+           ${sampleAPIs.API} (${sampleAPIs.Category}) </a>
+           </div>
            <div class = "my-api-description">${sampleAPIs.Description}</div>
            <div class = "my-api-auth">${sampleAPIs.Auth}</div>
            <div class = "my-api-HTTPS">HTTPS? ${sampleAPIs.HTTPS}</div>
