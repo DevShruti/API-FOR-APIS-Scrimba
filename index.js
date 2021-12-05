@@ -37,6 +37,7 @@ function displayAPIs(myAPIs) {
         let sampleAPIs = myAPIs.entries[0]
         document.body.innerHTML = `<div class = "my-api">
            <div class = "my-api-name">${sampleAPIs.API} (${sampleAPIs.Category})</div>
+           <div class = "my-api-description">${sampleAPIs.Description}</div>
           </div>`
 }
 
