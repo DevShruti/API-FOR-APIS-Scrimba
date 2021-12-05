@@ -39,6 +39,7 @@ function displayAPIs(myAPIs) {
            <div class = "my-api-name">${sampleAPIs.API} (${sampleAPIs.Category})</div>
            <div class = "my-api-description">${sampleAPIs.Description}</div>
            <div class = "my-api-auth">${sampleAPIs.Auth}</div>
+           <div class = "my-api-HTTPS">HTTPS? ${sampleAPIs.HTTPS}</div>
           </div>`
 }
 
