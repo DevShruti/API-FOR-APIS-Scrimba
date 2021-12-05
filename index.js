@@ -23,9 +23,10 @@
 */
 
 async function getAPIs() {
-
+  let response = await fetch(`https://api.publicapis.org/entries`)
+   let data = await response.json()
+   console.log(data)
 }
-
 function getAPIhtml(myAPI) {
     
 }
