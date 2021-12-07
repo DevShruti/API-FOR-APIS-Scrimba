@@ -9,6 +9,9 @@ body {
   display: grid;
   grid-template-rows: 3rem 1rem 4rem 3rem;
   grid-template-columns: repeat(3, calc(100% / 3));
+  background-color: lightblue;
+  border-radius: 1rem;
+  margin: 1rem;
 }
 
 .my-api-name {
