@@ -22,11 +22,12 @@ body {
 }
 
 .my-api-description {
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 3;
   text-align: center;
   font-size: 1.1rem;
   grid-row-start: 3;
   padding: 1rem;
+  overflow-y: auto;
 }
 .my-api-auth {
   grid-row-start: 4;
