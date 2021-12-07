@@ -29,21 +29,23 @@ async function getAPIs() {
    return data
 }
 function getAPIhtml(myAPI) {
+   return `<div class = "my-api">
+           <div class = "my-api-name">
+           <a href="${myAPI.Link}"target="_blank">
+           ${myAPI.API} (${myAPI.Category}) </a>
+           </div>
+           <div class = "my-api-description">${myAPI.Description}</div>
+           <div class = "my-api-auth">${myAPI.Auth ? myAPI.Auth : 'none' }</div>
+           <div class = "my-api-HTTPS">HTTPS? ${myAPI.HTTPS}</div>
+          </div>`
     
 }
 
 function displayAPIs(myAPIs) {
         console.log(myAPIs.entries[0])
         let sampleAPIs = myAPIs.entries[0]
-        document.body.innerHTML = `<div class = "my-api">
-           <div class = "my-api-name">
-           <a href="${sampleAPIs.Link}"target="_blank">
-           ${sampleAPIs.API} (${sampleAPIs.Category}) </a>
-           </div>
-           <div class = "my-api-description">${sampleAPIs.Description}</div>
-           <div class = "my-api-auth">${sampleAPIs.Auth ? sampleAPIs.Auth : 'none' }</div>
-           <div class = "my-api-HTTPS">HTTPS? ${sampleAPIs.HTTPS}</div>
-          </div>`
+        myAPIs = myAPIs.entries
+        document.body.innerHTML =  `<div class = "my-apis"> ${myAPIs.map(getAPIhtml).join('')}`
 }
 
 getAPIs()
